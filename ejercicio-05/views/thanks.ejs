@@ -1,0 +1,11 @@
+<%- include("partials/head") %>
+    <main id="main-content">
+        <section>
+            <h1>Gracias, <%= contact.name %></h1>
+            <p>El servidor recibió tu mensaje correctamente.</p>
+            <p><strong>Correo electrónico: </strong><%= contact.email %></p>
+            <h2>Mensaje recibido</h2>
+            <p class="contact-message"><%= contact.message %></p>
+        </section>
+    </main>
+<%- include("partials/footer") %>

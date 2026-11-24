@@ -1,0 +1,14 @@
+<% items.forEach((item) => { %>
+    <article>
+        <h3><%= item.title %></h3>
+        <p><%= item.context %><time datetime="<%= item.date %>"><%= item.date %></time></p>
+        <% if (item.technologies) { %>
+            <p><strong>Tecnologías: </strong><%= item.technologies %></p>
+        <% } %>
+        <ul>
+            <% item.achievements.forEach((achievement) => { %>
+                <li><%= achievement %></li>
+            <% }); %>
+        </ul>
+    </article>
+<% }); %>
